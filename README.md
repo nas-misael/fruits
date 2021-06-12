@@ -1,0 +1,1 @@
+Essa pequena amostra de um site foi desenvolvida na disciplina de Programação II, do Instituto Federal (IFSUl), e tem por objetivo ajudar pequenos estabelecimentos a criar e desenvolver sua presença online.

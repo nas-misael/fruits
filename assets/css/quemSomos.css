@@ -1,0 +1,29 @@
+.time {
+    width: 20vw;
+    height: 60vh;
+    display:inline-flex;
+    padding: 15px;
+}
+
+.time img {
+    width: 20vw;
+    border-radius: 100%;
+    height: auto;
+}
+
+.time h4 {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    color: #ff2400;
+    font-family: 'Roboto';
+}
+
+.time p {
+    line-height: 1.5;
+    font-size: max(1rem, 1.2vw);
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+#efeito {
+    font-family: 'Dela Gothic One', cursive;
+}

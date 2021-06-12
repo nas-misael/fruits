@@ -1,0 +1,61 @@
+.divReceita{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 10px 4px 20px 10px rgba(0, 0,0,0.2);
+    height: 400px;
+    width: 286px;
+    margin: 5px 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.divReceita img {
+    width: 286px;
+    height: 181px;
+}
+
+.tituloReceita {
+    font-size: 1.5rem;
+    color: #CD0000;
+    font-weight: bold;
+    margin-top: 0.75rem;
+    font-family: 'Roboto';
+}
+
+.divReceita p {
+    font-size: 0.85rem;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.divReceita a {
+    border-radius:4px;
+    cursor:pointer;
+    font-family: 'Roboto',  sans-serif;
+    font-weight:bold;
+    font-size:15px;
+    padding:10px;
+    margin-right: 0.5rem;
+    text-decoration:none;
+    border-color:#ff2400;
+    background-color: #ff2400;
+    color:#fff;
+    text-align: center;
+    float: right;
+}
+
+.divReceita:hover {
+    transform: scale(1.05);
+    rotate: (45deg); 
+    translate:(25px, 25px);
+}
