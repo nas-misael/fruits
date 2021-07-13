@@ -3,9 +3,9 @@
     "name": "fruteiraFruto",
     "start_url": ".",
     "display": "standalone",
+    "theme_color": "#ffffff",
     "theme-color": "#ffffff",
-    "theme-color": "#ffffff",
-    "background-color": "#000000",
+    "background_color": "#000000",
     "background-color": "#000000",
     "description": "Página sobre a fruteira fruta & fruto",
     "icons": [
