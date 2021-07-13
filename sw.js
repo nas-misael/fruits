@@ -24,7 +24,7 @@ self.addEventListener('fetch', async e => {
     const req = e.request
     const url = new URL(e.request.url)
 
-    if(url.origin == location.origin){
+    if(url.login == location.origin){
         e.respondWith(cacheFirst(req))
     } else {
         e.respondWith(networkAndCache(req))
@@ -42,7 +42,7 @@ async function networkAndCache(req){
     const cache = await caches.open(cacheName)
     try {
         const refresh = await fetch(req)
-        await cache.put(req, fresh.clone())
+        await cache.put(req, refresh.clone())
         return refresh
     } catch(e){
         const cached = await cache.match(req)
