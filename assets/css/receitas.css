@@ -28,7 +28,6 @@
     color: #CD0000;
     font-weight: bold;
     margin-top: 0.75rem;
-    font-family: 'Roboto';
 }
 
 .divReceita p {
@@ -41,7 +40,7 @@
 .divReceita a {
     border-radius:4px;
     cursor:pointer;
-    font-family: 'Roboto',  sans-serif;
+    font-family:sans-serif;
     font-weight:bold;
     font-size:15px;
     padding:10px;

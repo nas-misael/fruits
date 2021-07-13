@@ -14,13 +14,11 @@
 .time h4 {
     font-size: clamp(1.2rem, 2.5vw, 2rem);
     color: #ff2400;
-    font-family: 'Roboto';
 }
 
 .time p {
     line-height: 1.5;
     font-size: max(1rem, 1.2vw);
-    font-family: 'Roboto';
     font-weight: bold;
 }
 
