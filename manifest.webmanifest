@@ -1,0 +1,19 @@
+{
+    "short_name": "fruteira",
+    "name": "fruteiraFruto",
+    "start_url": ".",
+    "display": "standalone",
+    "theme-color": "#ffffff",
+    "theme-color": "#ffffff",
+    "background-color": "#000000",
+    "background-color": "#000000",
+    "description": "Página sobre a fruteira fruta & fruto",
+    "icons": [
+        {
+            "src": "./assets/img/logo.jpg",
+            "type": "image/jpg",
+            "sizes": "72x72"
+        }
+    ]
+
+}
