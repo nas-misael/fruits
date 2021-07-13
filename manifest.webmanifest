@@ -10,9 +10,9 @@
     "description": "Página sobre a fruteira fruta & fruto",
     "icons": [
         {
-            "src": "./assets/img/logo.jpg",
-            "type": "image/jpg",
-            "sizes": "72x72"
+            "src": "./assets/img/logo.png",
+            "type": "image/png",
+            "sizes": "144x144"
         }
     ]
 
