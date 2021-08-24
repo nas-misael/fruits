@@ -1,49 +1,43 @@
-const cacheName = 'fruteira'
+const cacheName = "Fruteira";
 
-self.addEventListener('install', function(event){
-    event.waitUntil( 
-        caches.open(cacheName).then(function(cache){
-            cache.addAll([ 
-                './',
-                './index.html',
-                './manifest.webmanifest',
-                './index.js'
-            ])
-        })
-    )
+self.addEventListener("install", function (event) {
+  event.waitUntill(
+    caches.open(cacheName).then(function (cache) {
+      cache.addAll(["./", "./index.html", "./manifest.json", "index.js"]);
+    })
+  );
+  return self.skipWaiting();
+});
 
-    return self.skipWaiting()
-})
+self.addEventListener("activate", () => {
+  self.clients.claim();
+});
 
-self.addEventListener('activate', e => {
-    self.clients.claim()
-})
+self.addEventListener("fetch", async (e) => {
+  const req = e.request;
+  const url = new URL(req.url);
 
-self.addEventListener('fetch', async e => {
-    const req = e.request
-    const url = new URL(e.request.url)
+  if (url.login === location.origin) {
+    e.respondWith(cacheFirst(req));
+  } else {
+    e.respondWith(networkAndCache(req));
+  }
+});
 
-    if(url.origin == location.origin){
-        e.respondWith(cacheFirst(req))
-    } else {
-        e.respondWith(networkAndCache(req))
-    }
-})
+async function cacheFirst(req) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(req);
 
-async function cacheFirst(req){
-    const cache = await caches.open(cacheName)
-    const cached = await cache.match(req)
-
-    return cached || fetch(req)
+  return cached || fetch(req);
 }
 
-async function networkAndCache(req){
+async function networkAndCache(req) {
     const cache = await caches.open(cacheName)
     try {
         const refresh = await fetch(req)
         await cache.put(req, refresh.clone())
-        return refresh
-    } catch(e){
+        return refresh 
+    } catch(e) {
         const cached = await cache.match(req)
         return cached
     }

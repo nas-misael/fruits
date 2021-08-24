@@ -1,19 +1,18 @@
 {
-    "short_name": "fruteira",
-    "name": "fruteiraFruto",
-    "start_url": ".",
+    "name": "Misael Nascimento",
+    "short_name": "Misael",
+    "theme_color": "#9b111e",
+    "background_color": "#9b111e",
     "display": "standalone",
-    "theme_color": "#ffffff",
-    "theme-color": "#ffffff",
-    "background_color": "#000000",
-    "background-color": "#000000",
-    "description": "Página sobre a fruteira fruta & fruto",
+    "scope": "/",
+    "start_url": "/?utm_source=homescreen",
+    "lang": "pt-BR",
+    "orientation": "any",
     "icons": [
-        {
-            "src": "./assets/img/logo.png",
-            "type": "image/png",
-            "sizes": "144x144"
-        }
+      {
+        "src": "/fruteira.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
     ]
-
-}
+  }
