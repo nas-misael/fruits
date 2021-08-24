@@ -10,7 +10,7 @@
     "orientation": "any",
     "icons": [
       {
-        "src": "./fruteira.png",
+        "src": "fruteira.png",
         "sizes": "512x512",
         "type": "image/png"
       }
